@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html>
+   <head>
+		<script type="text/javascript">
+		var primera;
+		var segunda;
+		function primero(){
+	primera=window.open('primero.html');
+}  
+function segundo(){
+	segunda=window.open('segundo.html');
+} 
+function tercero(){
+	
+segunda.window.document.title='Cambiando el titulo desde el padre';    
+
+} 
+function cuarto(){
+	segunda.location.href='segovia03.html';
+	
+} 
+function quinto(){
+	segunda.close();
+} 
+
+			function padre() {
+			opener.segundo();
+ }
+
+	</script>
+	
+		<meta name="author" content="tu nombre" />
+			<title>PADRE </title>
+			
+			
+		
+	
+	</head>
+	<body>
+		<a href="javascript:primero()"> Crear primera página hija</a>
+			</br>
+			<a href="javascript:segundo()"> Crear segunda página hija</a>
+			</br>
+			
+			
+			<a href="javascript:tercero()"> Cambiar el titulo a la segunda pagina hija</a>
+			</br>
+			<a href="javascript:cuarto()"> Cambiar segunda página hija</a>
+			</br>
+			<a href="javascript:quinto()"> Cerrar segunda página hija</a>
+			</br>
+		
+		
+	</body>
+</html>

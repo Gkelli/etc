@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Aprobare</title>
+
+	<script type="text/javascript">
+		var cadena;
+		var id;
+	
+		function comprobar(){
+			if(cadena=="aprobare"){
+				clearInterval(id);
+				alert("Has acertado!!");
+			}else{
+				cadena=window.prompt("Introduzca la clave");
+			}
+		}
+		cadena=window.prompt("Introduzca la clave");
+		id=setInterval("comprobar()",15000);
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>
