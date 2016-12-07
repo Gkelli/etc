@@ -1,0 +1,87 @@
+ul{
+list-style-image: url('../imagenes/mini-acueducto.jpg');
+}
+#primero{
+width:900px;
+display: -ms-box;
+display: -moz-box;
+display: -webkit-box;
+
+
+}
+#primero>div {
+width:300px;
+height:800px;
+border: 1px solid black ;
+-moz-box-align: center;
+-webkit-box-align: center;
+-ms-box-align:center;
+}
+
+#segundo{
+width:900px;
+display: -ms-box;
+display: -moz-box;
+display: -webkit-box;
+
+}
+#segundo>div {
+width:300px;
+border: 1px solid black ;
+-ms-box-orient: horizontal;
+-moz-box-orient: horizontal;
+-webkit-box-orient:horizontal;
+
+
+}
+
+#tercero{
+width:900px;
+display: -ms-box;
+display: -moz-box;
+display: -webkit-box;
+-ms-box-orient: vertical;
+-moz-box-orient: vertical;
+-webkit-box-orient:vertical;
+}
+#tercero>div {
+width:350px;
+height:900px;
+border: 1px solid black ;
+	-moz-box-align:stretch;
+	-ms-box-align:stretch;
+	-webkit-box-align:stretch;
+}
+
+#cuarto{
+display: -ms-box;
+display: -moz-box;
+display: -webkit-box;
+
+}
+#cuarto>div {
+	-ms-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
+	-ms-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+	-webkit-box-orient:horizontal;
+border: 1px solid black ;
+}
+
+
+div ol:first-child{
+list-style-type:lower-greek ;
+list-style-position:inside;
+
+}
+
+div ol:last-child{
+list-style-type:decimal-leading-zero ;
+list-style-position:outside;
+
+}
+
+
+
+
