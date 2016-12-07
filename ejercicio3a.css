@@ -1,0 +1,14 @@
+/*3.-) En el fichero ejercicio-3.html realiza las siguientes acciones:
+i. Mediante un estilo vinculado realiza las siguientes acciones, cada
+ apartado se deberás de realizar en un fichero diferente:
+a. Todos los párrafos (span) que se encuentran dentro de otro párrafo 
+(div) se van a mostrar con estructura de bloque, mostrando uno debajo 
+del otro, mostrando con un borde rojo.*/
+
+
+
+div span{
+float:left;
+clear:left;
+border : 3pt double red;
+}

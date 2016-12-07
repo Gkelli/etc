@@ -1,0 +1,40 @@
+
+div[id="l1"]>span{
+		-webkit-column-gap: 800px;
+	display: -ms-box;
+    display: -moz-box;
+    display: -webkit-box;
+	width:500px;
+	-ms-box-orient: vertical;
+    -moz-box-orient: vertical;
+	-webkit-box-orient:vertical;	
+	border:2pt double blue;
+	 padding-bottom:25px;
+	 padding-top:20px;
+	 padding-right:15px;
+	 padding-left:40px;
+
+}
+div[id="l2"]>span{
+		-webkit-column-gap: 800px;
+	display: -ms-box;
+    display: -moz-box;
+    display: -webkit-box;
+	width:500px;
+	-ms-box-orient: vertical;
+    -moz-box-orient: vertical;
+	-webkit-box-orient:vertical;	
+	border:2pt double green;
+	 padding-bottom:25px;
+	 padding-top:20px;
+	 padding-right:15px;
+	 padding-left:40px;
+
+}
+div{
+	display: -ms-box;
+    display: -moz-box;
+    display: -webkit-box;
+	width:500px;
+	
+}

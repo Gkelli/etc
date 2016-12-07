@@ -1,0 +1,72 @@
+/*e) Haz que todas las etiquetas con el atributo title que termina con la cadena loco se muestren 
+con el tipo de letra Latha con un tamaño de 13 puntos y en color 273CDD.
+f) Haz que todas las etiquetas con el atributo title que contengan la cadena conquista se muestren
+ con el tipo de letra Calibri con un tamaño de 12 puntos y en color 910D1F.
+g) Haz que la primera letra de la clase reconquista tenga un tamaño 3 veces superior al normal y 
+que aparezca en color CDB3DD.
+h) Haz que la primera fila de la clase cantabria aparezca en color D5D21B y la primera letra cada 
+una de sus palabras debe aparecer en mayúsculas.*/
+ 
+h3[title]{
+ font-family: Arial;
+ color: #948B0E;
+ 
+ }
+ 
+ [class=historia]{
+ 
+ font-family: Century;
+ font-size: 10pt;
+ color: #CBE68D;
+ } 
+ 
+ [class~=cantabra]{
+ font-family: Corbel;
+ font-size: 11pt;
+ color: #54B3B6;
+ 
+ 
+ }
+ 
+ [title^="Cantabri"]{
+ 
+ font-family: Georgia;
+ font-size: 12pt;
+ color: #751A7C;
+ }
+
+
+[title*="loco"]{
+font-family: Latha;
+font-size: 13pt;
+color: #273CDD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

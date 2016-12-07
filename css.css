@@ -1,0 +1,30 @@
+#angeles p {
+	font-family: Times New Roman;
+	font-size: 13pt;
+	color: green;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+ 
+div * p {
+
+color:grey;
+}
+ 
+ 
+ p+p {
+ 
+ font-size:2em;
+ line-height:2em;
+ background-color:red;
+ }
+
+
+
+body {
+
+background-image:url("../imagenes/fondo.png");
+background-repeat: no-repeat;
+background-size:100% 100%;
+}

@@ -1,0 +1,16 @@
+/*Crea un documento HTML a partir del texto del fichero giralda.html y haz que
+todos los datos referentes a las tres campanas se muestren como bloques en línea y que el
+primero que aparece en el documento se muestre el segundo, el segundo que aparece en el
+documento se muestre el tercero y el tercero se muestre el segundo. Todos los datos van a
+tener de fondo un degrado lineal de tres colores*/
+
+
+
+#campanas{
+-webkit-display:inline-block;
+-ms-display:inline-block;
+-moz-display:inline-block;
+display:inline-block;
+background:webkit-linear-gradient(180deg, violet 20%,red 50%,orange 80%);
+background:linear-gradient(180deg, violet 20%,red 50%,orange 80%);
+}

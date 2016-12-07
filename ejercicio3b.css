@@ -1,0 +1,21 @@
+/*b. Todos los párrafos de la clase paris se van a mostrar con el tipo de letra
+ "Comic Sans MS" con un tamaño de 13 puntos, de color 15CBEB, el color de fondo
+ va a ser un degradado lineal de los colores C74B7B, C76C4B y C7B54B. Todos los
+ párrafos que tengan un identificador que contenga la letra "l" se van a mostrar 
+ con el tipo de letra Cambria con un tamaño de 14 puntos de color 43695B.*/
+ 
+ .paris{
+ font-family:Comic Sans MS;
+ font-size:13pt;
+ color:#15CBEB;
+background: -webkit-linear-gradient(#C74B7B 20%, #C76C4B 50%, #C7B54B 80%);
+background: linear-gradient(#C74B7B 20%, #C76C4B 50%, #C7B54B 80%);
+ }
+ 
+ 
+ [id*="l"] {
+ font-family:Cambria;
+ font-size:14pt;
+ color:#43695B;
+ 
+ }

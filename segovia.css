@@ -1,0 +1,99 @@
+/* Con el fichero segovia03.html realiza las siguientes acciones:
+a. Los enlaces van a tener como color verde, los enlaces visitados
+tienen por color el 302 en hsl, cuando nos situemos sobre los enlaces
+el color de los mismos va a ser 051B41, cuando pulse el ratón sobre
+el enlace va a tener como color 187, 187, 64 en rgb.*/
+a:link{
+color:green;
+
+}
+a:visited{
+color:302%;
+}
+
+a:hover{
+color:#051B41;
+}
+
+a:active{
+color:187 187 64;
+}
+
+html{
+background-color: blue;
+background-clip: border-box;
+background-image: url('../imagenes/acueducto.jpg');
+background-origin: content-box;
+margin-left: 40px;
+margin-top: 35px;
+margin-right: 30px;
+font-family: Calibri;
+font-size: 13pt;
+color: #681422;
+
+}
+
+#leyendas {
+font-family: Cambria;
+font-size: 12pt;
+border: 3px outset brown;
+}
+
+[class~="leyenda"]:first-line{
+font-size: 2em;
+text-transform: uppercase;
+}
+
+[class^="c"]{
+font-size: 1.5em;
+
+}
+
+#Segovia{
+
+border:2px dashed yellow;
+box-shadow: 2px 2px 2px #4A5869;
+padding-top: 5px;
+padding-left: 6px;
+padding-right: 4px;
+margin-top: 9px;
+margin-left: 10px;
+margin-right: 6px;
+font-size: 0.5em;
+text-indent: 22px;
+outline: orange solid 3px;
+outline: gold solid 4px;
+}
+
+#catedral{
+border: 5px inset black;
+border-radius: 30px;
+box-shadow: -5px -5px 2px #4A5869;
+padding-top: 12px;
+padding-left: 15px;
+padding-right: 8px;
+line-height: 2em;
+}
+
+#acueducto{
+border:4px ridge blue ;
+box-shadow: 5px 5px 2px green,-5px 5px 2px green,5px -5px 2px green,-5px -5px 2px green;
+padding-top: 13px;
+padding-left: 16px;
+padding-right: 6px;
+font-size: 0.75em;
+text-indent: 22pt;
+
+}
+
+#alcazar {
+border:3px groove pink;
+padding-top: 25px;
+padding-left: 30px;
+padding-right: 14px;
+line-height: 1.5em;
+}
+
+
+
+

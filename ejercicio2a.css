@@ -1,0 +1,33 @@
+/*i. Mediante un estilo vinculado realiza las siguientes acciones, cada apartado se deberás de realizar en un fichero diferente:
+a. El color de los hiperenlaces será 2DE120, los hiperenlaces visitados serán de color E18E20,
+ el color de los hiperenlaces cuando se pulse sobre ellos será 20E1D8. Todos los párrafos (p) 
+ que estén dentro de un párrafo(div) y que no sean hijos de los mismo se van a mostrar con el
+ tipo de letra Arial con un tamaño de 10 puntos y de color 841827.
+b. Todos los párrafos (div) que hay a continuación de un hiperenlace se van a mostrar con un 
+borde de 3puntos, punteado y de color 3A2A5B. Siendo el color de fondo de estos párrafos E5E28A,
+ mostrando el color a partir del contenido. También van a tener una sobre línea de 2 puntos de 
+ color A3ED23. Todo el documento va a tener un margen izquierdo de 20 pixeles, un margen superior 
+ de 15 pixeles y un margen derecho de 10 pixeles.
+c. La primera lista no va a tener ningún marcador delante de los elementos de la lista. La lista 
+no ordenada que hay al final va tener como marcador la imagen torre-1.png, la lista ordenada del
+ final va a tener como marcador letras griegas en minúsculas.
+d. Vamos a hacer que las imágenes que hay al final se muestren una debajo de las otras con un
+ tamaño de 400 pixeles. Al situarnos sobre las mismas el tamaño de las imágenes va a disminuir 
+ progresivamente durante 3 segundos hasta alcanzar un tamaño de 100 pixeles.*/
+ 
+ a:link{
+ color:#2DE120;
+ }
+ a:visited{
+ color:#E18E20; 
+ }
+ a:active{
+ color:green;
+ }
+div * p{
+font-family:Arial;
+font-size:10pt;
+color:#841827;
+
+
+}

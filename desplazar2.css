@@ -1,0 +1,129 @@
+/*Crea un documento HTML que contenga una caja de texto con tu nombre,
+inicialmente va a tener como color de fondo rojo y los caracteres en azul, el tipo de letra va a
+ser Arial de tamaño 10 puntos, el tamaño de la caja de texto va a ser de 50 pixeles por 50
+pixeles, situada en el centro de la pantalla. Mediante una animación vamos a conseguir que se
+desplace a cada una de las esquinas, para pasar de una esquina a otra debe a volver a pasar
+por el centro con sus valores iniciales. Cuando se sitúe en la esquina superior izquierda e
+inferior derecha va a tener como color de fondo naranja, el color de los caracteres será verde,
+el tipo de letra será Verdana con un tamaño de 24 puntos, el tamaño de la caja de texto va a
+ser de 180 por 180 pixeles. Cuando se sitúe en la esquina superior derecha e inferior izquierda
+va a tener como color de fondo violeta, el color de los caracteres será amarillo, el tipo de letra
+será Times New Roman con un tamaño de 18 puntos, el tamaño de la caja de texto será de 150
+por 150 pixeles. La duración de la animación será de 13 segundos y se va a repetir 10 veces*/
+
+
+@keyframes animacion {
+
+0%{
+background-color:red;
+color: blue;
+font-family:Arial;
+font-size:10pt;
+width:50px;
+height:50px;
+top:50%;
+left:50%;
+}
+
+12%{
+background-color:orange;
+color:verde;
+font-family:Verdana;
+font-size:24pt;
+height:180px;
+width:180px;
+top:0%;
+left:0%;
+}
+
+24%{
+background-color:red;
+color: blue;
+font-family:Arial;
+font-size:10pt;
+width:50px;
+height:50px;
+top:50%;
+left:50%;
+}
+
+36%{
+background-color:violet;
+color:yellow;
+font-family:Times New Roman;
+font-size:18pt;
+width:150px;
+height:150px;
+top:100%;
+left:0%;
+}
+
+48%{
+background-color:red;
+color: blue;
+font-family:Arial;
+font-size:10pt;
+width:50px;
+height:50px;
+top:50%;
+left:50%;
+}
+
+60%{
+background-color:violet;
+color:yellow;
+font-family:Times New Roman;
+font-size:18pt;
+width:150px;
+height:150px;
+top:0%;
+left:100%;
+}
+
+72%{
+background-color:red;
+color: blue;
+font-family:Arial;
+font-size:10pt;
+width:50px;
+height:50px;
+top:50%;
+left:50%;
+}
+
+84%{
+background-color:orange;
+color:verde;
+font-family:Verdana;
+font-size:24pt;
+height:180px;
+width:180px;
+top:100%;
+left:100%;
+}
+
+100%{
+background-color:red;
+color: blue;
+font-family:Arial;
+font-size:10pt;
+width:50px;
+height:50px;
+top:50%;
+left:50%;
+}
+}
+
+div{background-color:red;
+color: blue;
+font-family:Arial;
+font-size:10pt;
+width:50px;
+height:50px;
+top:50%;
+left:50%;
+animation-name:animacion;
+animation-duration: 13s;
+animation-iteration-count:10;
+position:absolute;
+}

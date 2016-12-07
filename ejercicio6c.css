@@ -1,0 +1,12 @@
+
+img{
+	width:300px;
+	transition: 2s;
+}
+img:hover{
+  -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+	transition: 2s;
+	
+}

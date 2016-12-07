@@ -1,0 +1,24 @@
+div {
+font-family:Calibri;
+font-size:11px;
+font-style:italic;
+background-color:#4D8365;
+color:#324EED;
+line-height:17px;
+width:600px;
+height:500px;
+}
+
+p{
+font-family:Verdana;
+font-size:10px;
+font-weight:normal;
+background-color:#BEC079;
+color:#C1C9C9;
+line-height:20px;
+}
+
+img{
+width: 150px; 
+height: 150px;
+}

@@ -1,0 +1,57 @@
+/*En el fichero ejercicio-2.html realiza las siguientes acciones:
+a. El color de los hiperenlaces será D61048, los hiperenlaces visitados serán de color DEE84F,
+ el color de los hiperenlaces cuando se pulse sobre ellos será DD5D0E. Todos los párrafos (p) 
+ que estén dentro de un párrafo(div) y que no sean hijos de los mismo se van a mostrar con el 
+ tipo de letra Times New Roman con un tamaño de 12 puntos, en cursiva y subrayado; y de color 38BF92.
+b. Todos los párrafos (div) que hay a continuación de un hiperenlace se van a mostrar con un 
+borde de 5 puntos, doble y de color 3211D4. Siendo el color de fondo de estos párrafos 08FB72, 
+mostrando el color a partir del relleno. También van a tener una sobre línea de 2 puntos de 
+color A3ED23. Todo el documento va a tener un relleno izquierdo de 20 pixeles, un relleno 
+superior de 15 pixeles y un relleno derecho de 10 pixeles.
+c. La lista ordenada no va a tener ningún marcador delante de los elementos de la lista.
+ Todos los párrafos (span) que estén precedidos de otro párrafo (span) se van a mostrar de color 576551.
+d. Vamos a hacer que las imágenes que hay se muestren con un tamaño de 350 pixeles. Al 
+situarnos sobre las mismas el tamaño de las imágenes va a disminuir progresivamente durante 
+15 segundos hasta alcanzar un tamaño de 75 pixeles, cuando abandonamos la imagen va a volver
+ automáticamente a su tamaño en el mismo periodo de tiempo.*/
+
+ a:link {
+ color:D61048;
+ }
+ a:visited{
+ color:DEE84F;
+ }
+ a:active{
+ color:DD5D0E;
+ }
+ 
+a+div {
+border: 5pt double #3211D4;
+background-color:#08FB72;
+background-clip: padding-box;
+outline:#A3ED23 solid  2pt
+}
+
+
+html{
+padding-left:20px;
+padding-top:15px;
+padding-right:10px;
+}
+
+span span {
+color:576551
+}
+
+img{
+width:350px;
+height:350px;
+transition:15s;
+
+}
+
+img:hover{
+width:75px;
+height:75px;
+
+}

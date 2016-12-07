@@ -1,0 +1,41 @@
+/*En el fichero ejercicio-5.html realiza las siguientes acciones:
+a. Haz que todas las cabeceras utilicen como tipo de letra "Comic Sans MS" en
+ negrilla y subrayadas, el color de las letras será E61235.
+b. Haz que todo el documento utilice el tipo de letra "Times New Roman" con un 
+tamaño de 15 puntos, el interlineado será triple, el color de los caracteres será 
+12E69C y el color de fondo será un degradado lineal de los colores 3511AB, 11AB44,
+ AB7A11 y AB2A11, que se muestra a partir del contenido. El documento va a tener
+ margen superior 5 pixeles, relleno superior 3 pixeles, margen izquierdo 8 pixeles
+ , relleno izquierdo 4 pixeles, margen derecho 7 pixeles, relleno derecho 4 pixeles
+ , margen inferior 6 pixeles, relleno inferior 3 pixeles.
+c. Haz que todos los párrafos (div) que sean hijos de otros párrafos (div) se 
+muestren con el tipo de letra Verdana con un tamaño de 12 puntos. Haz que todos
+ los párrafos (div) que sean descendiente (pero no hijos) de otros párrafos (div)
+ se muestren con el tipo de letra con un tamaño de 13 puntos.*/
+ 
+h1,h2{
+font-family:Comic Sans MS;
+font-style:italic;
+font-weight:bold;
+color:E61235;
+}
+html{
+font-family:Times New Roman;
+font-size:15pt;
+color:#12E69C;
+line-height:3em;
+background-color: -webkit-linear-gradient(#3511AB, #11AB44, #AB7A11,#AB2A11); 
+background: -o-linear-gradient(#3511AB, #11AB44, #AB7A11,#AB2A11); 
+background: -moz-linear-gradient(#3511AB, #11AB44, #AB7A11,#AB2A11); 
+background: linear-gradient(#3511AB, #11AB44, #AB7A11,#AB2A11); 
+margin:5px 8px 6px 7px;
+padding:3px 4px 3px 4px;
+}
+div>div {
+font-size:12pt;
+font-family:Verdana;
+}
+div * div {
+font-size:13pt;
+color:green;
+}

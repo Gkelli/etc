@@ -1,0 +1,94 @@
+ div * span {
+ text-decoration:underline;
+ font-weight:bold;
+
+ }
+ 
+ div+h1{
+
+color:purple;
+font-size:32pt;
+text-shadow: 9px -9px chocolate,6px -6px rgb(164, 35, 18), 12px -12px hsl(342, 50%, 50%);
+}
+
+p > h2{
+color: lime;
+text-decoration:underline;
+text-shadow: -9px 9px coral,-6px 6px cyan;
+
+}
+
+div p{
+
+font-family:calibri;
+font-size:14pt;
+}
+
+div#cartedral  {
+font-family:Century;
+font-size:10pt;
+color: rgb(176, 51, 174);
+text-transform:uppercase;
+
+}
+div#Alcazar{
+font-family:Century;
+font-size:10pt;
+color: rgb(176, 51, 174);
+text-transform:uppercase;
+
+}
+
+div#Acueducto{
+font-family:Century;
+font-size:10pt;
+color: rgb(176, 51, 174);
+text-transform:uppercase;
+
+}
+
+div#azoguejo{
+font-family:Century;
+font-size:10pt;
+color: rgb(176, 51, 174);
+text-transform:uppercase;
+
+}
+
+.posicion{
+
+font-family:Cambria;
+font-size:120%;
+font-style: italic;
+color: rgb(29, 141, 130);
+
+}
+
+div.situado{
+
+font-family: Arial;
+font-size:11pt;
+color:olive;
+
+}
+
+div[class^="pla"]{
+
+font-style: italic;
+font-weight:bold;
+}
+
+div[class$="o"]{
+
+text-decoration:underline;
+}
+
+div[class*="teri"]{
+
+color: rgb(29, 141, 130);
+text-transform:lowercase;
+}
+
+
+
+

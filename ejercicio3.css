@@ -1,0 +1,56 @@
+/*En el fichero ejercicio-3.html realiza las siguientes acciones:
+a. La imagen de esta página deberá tener un tamaño del 13% y se va a 
+desplazar a lo largo del borde superior del documento, va a cruzar por la diagonal,
+ luego va a ir por el borde inferior del documento, va a cruzar por la diagonal 
+ (con esto vuelve al principio), en un recorrido de 13 segundo 
+y realizando el recorrido 13 veces.
+b. Todos los párrafos van a tener un margen alrededor de 5 pixeles, un borde 
+doble de color FBEF0A. El tipo de letra va a ser one-fell, que vamos a obtener
+ del fichero one-fell.ttf del directorio letras. Va a tener un tamaño de 14 puntos y se muestran en negrilla y cursiva.
+c. La página va a tener como imagen de fondo nueva-york-1-1.jpg que se va a
+ mostrar a partir del relleno de la misma, la imagen se va a poder repetir 
+ verticalmente. El tamaño de la imagen va a ser de 350 pixeles de altura..*/
+ 
+ img {
+ height:13%;
+ width:13%;
+ animation-name:animacion;
+ animation-duration:13s;
+ animation-iteration-count:13;
+ position:absolute;
+ }
+
+ 
+@keyframes animacion{
+ 
+ 0%{left:0%; top:0%;}
+ 25%{left:87%; top:0%;}
+ 50%{left:0% ;top:87%;}
+ 75%{left:87%; top:87%;}
+ 100%{left:0%;top:0%;}
+ }
+ 
+ @font-face{
+ font-family:"one-fell";
+ src:url("../letras/one-fell.ttf"); 
+ }
+ 
+ div {
+ margin:5px;
+ border : 3px double #FBEF0A;
+font-family: one-fell; 
+font-size:14pt;
+font-style:italic;
+font-weight:bolder;
+ }
+
+ html{
+ background-image: url("../imagenes/nueva-york-1.jpg");
+ background-repeat:repeat-y;
+ background-origin:padding-box;
+ background-size: 100% 350px;
+ }
+ 
+
+
+

@@ -1,0 +1,64 @@
+/*Realizar los siguientes ejercicios con los datos del fichero practica-2-10.rar:
+1.-) En el fichero ejercicio-1.html realiza las siguientes acciones:
+a. Pon como imágenes de fondo new-york-101.jpg, new-york-102.jpg, new-york-103.jpg y new-york-104.jpg. 
+Dichas imágenes ocuparán todo el ancho de navegación. Siempre serán visibles mostrándose un única vez, el
+ tamaño de todas las imágenes va a ser el mismo.
+b. El tipo de letra para todo el documento va a ser Comic Sans MS con un tamaño de 12 puntos con el color 
+de los caracteres en color 195A19. El interlineado va a ser de 2'5.
+c. Todas listas no ordenadas (ul) que estén a continuación de una cabecera (H2) contenidos en un párrafo 
+(div) van a estar subrayado con un tamaño de 10 puntos y de color verde, además vamos a mostrar delante de
+cada elemento de la lista como marcador la imagen estatua.jpg. 
+Todas listas ordenadas (ol) que están a 
+continuación de una cabecera (h1) se van a mostrar en negrilla, cursiva y con un tamaño de 13 puntos,
+ siendo el marcador de cada elemento letras latinas en minúsculas fuera del flujo del contenido. Todas
+ las cabeceras (h2) que estén dentro de un párrafo (div) se van a mostrar en color gris con un tamaño de 16 puntos.
+d. Las cabecera H2 se va a mostrar con una sombra sobre las letras arriba y la izquierda con el color 1738EA. 
+Todos los párrafos (span) que estén dentro de un párrafo (div) se van a en cursiva mostrar con el color 753159.*/
+
+
+body{
+font-family:Comic Sans MS;
+font-size:12pt;
+color:#195A19;
+line-height:2.5em;
+background-image:url("../imagenes/new-york-101.jpg"),
+				url("../imagenes/new-york-102.jpg"),
+				url("../imagenes/new-york-103.jpg"),
+				url("../imagenes/new-york-104.jpg");
+background-repeat:no-repeat;
+background-attachment:fixed;				
+background-size:100% 25%, 100% 50%, 100% 75%, 100% 100%;
+
+}
+div h2+ul{
+text-decoration: underline;
+font-size:10pt;
+color:green;
+list-style:square;
+list-style-image: url("../imagenes/estatua.jpg");
+
+
+}
+
+h1+ol {
+font-weight: bolder;
+font-style: italic;
+font-size: 13pt;
+list-style: lower-latin;
+list-style-position: outside;
+}
+
+div h2{
+color: grey;
+font-size: 16pt;
+}
+
+h2{
+text-shadow: -10px -10px 5px #1738EA
+}
+
+div span{
+font-style: italic;
+color: #753159
+
+}

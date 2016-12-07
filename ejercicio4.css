@@ -1,0 +1,42 @@
+/*4.-) En el fichero ejercicio-4.html realiza las siguientes acciones:
+a. Todos los párrafos (span) que se encuentran dentro de otro párrafo (div)
+ cuyo identificador es "mta" se van a mostrar con estructura de bloque, mostrando
+ uno a continuación del otro, con un ancho de 300 pixeles, mostrándolos con un borde rojo doble de 2 puntos.
+b. Todos los párrafos que pertenezcan al menor a la clase york se van a mostrar 
+con el tipo de letra "Arial" con un tamaño de 10 puntos, de color 15CBEB, el color 
+de fondo va a ser un degradado circular centrado de los colores C74B7B, C76C4B y C7B54B
+. Todos los párrafos que tengan un identificador que contenga la cadena "li" se van a 
+mostrar con el tipo de letra calibri con un tamaño de 12 puntos de color 43695B.*/
+ 
+div[id="mta"]{
+display:-webkit-box;
+display:-moz-box;
+display:box;
+}
+
+ 
+div[id="mta"] span{
+display:-webkit-box;
+display:-moz-box;
+display:box;
+-webkit-box-orient:horizontal;
+-moz-box-orient:horizontal;
+box-orient:horizontal;
+border: 2pt double red;
+width:300px;
+}
+
+div[class*="york"]{
+font-family:Arial;
+font-size:10pt;
+color:#15CBEB;
+background: radial-gradient( circle , #C74B7B, #C76C4B, #C7B54B);
+background: -webkit-radial-gradient( circle , #C74B7B, #C76C4B, #C7B54B);
+}
+
+div {
+font-family:Calibri;
+font-size:12pt;
+color:#43695B;
+
+}
