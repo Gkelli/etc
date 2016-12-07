@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+		var numA= Math.floor(Math.random()*20)+1;
+		 
+		document.writeln(numA);
+		var num = prompt( "introduce un numero entre 1 y 20 para comprobar si has acertado el numero generado aleatoriamente!!!!");
+		
+		
+		num=parseInt(num);
+		
+		if (num>20||num<1){
+		document.write("El numero sale fuera de rango. Te has equivocado >_< ")
+		} else if (num==numA){
+		document.write("El numero es el mismo . Has Ganado!!! :' D")
+		} else {
+		document.write("El numero no es el mismo. Has perdido :'(")
+		}
+		
+			
+		</script>
+		
+	</head>
+	<body>
+	
+
+		
+					
+	</body>
+</html>	

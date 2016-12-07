@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+	
+		
+			function cadena(){
+			
+			var fecha = prompt( "introduce una cadena con la fecha, en formato dia,mes,año ");
+			if (fecha.length==10){
+			var anio =  parseInt(fecha.substring(6,fecha.length));   
+			var dia  =  fecha.substring(0,2); 
+			var mes  =  fecha.substring(3,5);
+			document.write("La fecha estándar es : ");
+			document.write(dia);
+			document.write("/");
+			document.write(mes);
+			document.write("/");
+			document.write(anio);
+			document.write("</br>");
+			document.write("La fecha local es : ");
+			document.write(anio);
+			document.write("/");
+			document.write(dia);
+			document.write("/");
+			document.write(mes);
+			document.write("</br>");
+			document.write("Funcion toLocaleString : La fecha local es : ");
+			toLocaleString(fecha,ES);
+			
+			}else {
+			document.write("Se ha introducido un formato no valido")
+			}
+			}
+		
+			/*function validaFechaDDMMAAAA(fecha){
+			var dtCh= "/";
+			var minYear=1900;
+			var maxYear=2100;
+				function isInteger(s){
+				var i;
+					for (i = 0; i < s.length; i++){
+					var c = s.charAt(i);
+					if (((c < "0") || (c > "9"))) return false;
+					}
+			return true;
+				}
+			
+			}		
+			*/
+			function dia(){
+			
+			var numero=window.prompt('introduce un numero para comprobar que es el dia anterior dado.');
+		
+			
+			}	
+			
+			function mes(){
+		
+			
+			
+			}	
+			
+			function año(){
+		
+			
+			
+			}				
+			
+			function numeros(){
+			
+		
+			
+			
+			}	
+			
+			
+			
+		</script>
+		
+	</head>
+	<body>
+	
+		<input type="button" onclick="cadena()" value="cadena"> <br />
+		<input type="button" onclick="dia()" value="dia"> <br />
+		<input type="button" onclick="mes()" value="mes"> <br />
+		<input type="button" onclick="año()" value="año"> <br />
+		<input type="button" onclick="numeros()" value="numeros"> <br />
+						
+		
+					
+	</body>
+</html>	
